@@ -1,0 +1,72 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title>helooo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(client) app/vendor.css -->
+      <!-- bower:css -->
+      <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
+      <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,client}) app/app.css -->
+  <link rel="stylesheet" href="client/app/app.css">
+    <link rel="stylesheet" href="client/app/app.css">
+    <link rel="stylesheet" href="client/app/login/styles.css">
+    <link rel="stylesheet" href="client/app/main/main.css">
+      <!-- endinjector -->
+    <!-- endbuild -->
+  </head>
+  <body ng-app="meanApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    [endif]
+
+    Add your site or application content here-->
+    <div ui-view=""></div>
+
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    [endif]
+    build:js({client,node_modules}) app/vendor.js
+     bower:js--> 
+     <script type="text/javascript" src="jquery/dist/jquery.js"></script>
+     <script type="text/javascript" src="angular/angular.js"></script>
+     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<!--      <script src="bootstrap/bootstrap-tooltip.js"></script>
+ -->    <script src="angular-resource/angular-resource.js"></script>
+     <script src="angular-cookies/angular-cookies.js"></script>
+     <script src="angular-sanitize/angular-sanitize.js"></script>
+     <script src="lodash/dist/lodash.compat.js"></script>
+     <script src="angular-ui-router/release/angular-ui-router.js"></script>
+     <script src="ngUpload/ng-upload.js"></script>
+     <script src="ng-file-upload/ng-file-upload.js"></script>
+     <script src="ng-file-upload-shim/ng-file-upload-shim.js"></script>
+      <!-- endbower -->
+    <!-- endbuild -->
+
+        
+        <!-- build:js({.tmp,client}) app/app.js -->
+        
+        <script src="app/app.js"></script>
+          
+          <script src="app/login/login.js"></script>
+          <script src="app/login/login.main.js"></script>
+          <script src="app/main/main.controller.js"></script>
+          <script src="app/main/main.js"></script>
+          <script src="components/navbar/navbar.controller.js"></script>
+          <script type="text/javascript" src="app/pic/pic.js"></script>
+          <script type="text/javascript" src="app/pic/pic.controller.js"></script>
+          <!-- endinjector -->
+        <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,25 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Features:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
+        <li>
+        <a href="#" ng-click="deleteThing(thing)">{{thing.name}}</a>
+        <img src="{{thing.avatar}}" style="width:304px;height:228px;" >
+        <button class="btn btn-primary" type="button" ng-click="addimage(thing._id)"></button>
+        </li>
+      </ul>
+  <div class="col-lg-12">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for..." ng-model="newThing">
+      <span class="input-group-btn">
+        <button class="btn btn-primary" type="button" ng-click="addThing()">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+    </div>
+  </div>
+</div>
+
+
